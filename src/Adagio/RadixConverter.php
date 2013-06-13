@@ -1,3 +1,7 @@
+<?php
+
+namespace Adagio;
+
 /**
  * Convert strings from an alphabet to another (generalization of numeric base convertion)
  */
