@@ -67,15 +67,15 @@ class RadixConverter
         return $result;
     }
 
-	/**
-	 * List builtin alphabets
-	 * 
-	 * @retrun string[]
-	 */
-	public function listAlphabets()
-	{
-		$r = new \ReflectionClass($this);
+    /**
+     * List builtin alphabets
+     * 
+     * @retrun string[]
+     */
+    public function listAlphabets()
+    {
+        $r = new \ReflectionClass($this);
 
-		return $r->getConstants();
-	}
+        return $r->getConstants();
+    }
 }
