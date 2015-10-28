@@ -66,4 +66,16 @@ class RadixConverter
 
         return $result;
     }
+
+	/**
+	 * List builtin alphabets
+	 * 
+	 * @retrun string[]
+	 */
+	public function listAlphabets()
+	{
+		$r = new \ReflectionClass($this);
+
+		return $r->getConstants();
+	}
 }
