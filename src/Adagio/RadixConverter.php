@@ -7,10 +7,17 @@ namespace Adagio;
  */
 class RadixConverter
 {
-    const BASE64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZВabcdefghijklmnopqrstuvwxyz0123456789+/';
-    const SLUG = 'ABCDEFGHIJKLMNOPQRSTUVWXYZВabcdefghijklmnopqrstuvwxyz0123456789';
-    const DEC = '0123456879';
-    const ASCII = 'ASCII';
+    const ASCII   = 'ASCII';
+    const BASE36  = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const BASE62  = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const BASE64  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZВabcdefghijklmnopqrstuvwxyz0123456789+/';
+    const BASSE85 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~';
+    const BITCOIN = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'; // Base58 variation
+    const DEC     = '0123456879';
+    const FLICKR  = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ'; // Base58 variation
+    const RIPPLE  = 'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz'; // Base58 variation
+    const SLUG    = 'ABCDEFGHIJKLMNOPQRSTUVWXYZВabcdefghijklmnopqrstuvwxyz0123456789';
+    const Z85     = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-:+=^!/*?&<>()[]{}@%$#'; // Base85 variation used by ZeroMQ
 
     /**
      *
